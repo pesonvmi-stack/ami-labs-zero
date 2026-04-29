@@ -1,0 +1,228 @@
+:root {
+    --sidebar-width: 320px;
+} 
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(99,102,241,0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(147,51,234,0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(99,102,241,0.4);
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+body {
+    background: #f4f6f9;
+}
+
+h2 {
+    letter-spacing: 0.5px;
+}
+
+hr {
+    border-top: 1px solid #334155;
+}
+
+.logo-circle {
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    animation: glowPulse 2.5s ease-in-out infinite;
+    /*animation: glowPulse 1s infinite;*/
+}
+
+    /* HOVER EFFECT */
+    .logo-circle:hover {
+        transform: scale(1.15) rotate(5deg);
+    }
+
+body.dark-mode {
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+.dark-mode .navbar {
+    background-color: #020617 !important;
+}
+
+    .dark-mode .navbar-brand {
+        color: #e0e7ff !important;
+        text-shadow: 0 0 8px rgba(99,102,241,0.6);
+    }
+
+        .dark-mode .navbar-brand span:last-child {
+            color: #ffffff;
+        }
+
+.dark-mode .logo-circle {
+    box-shadow: 0 0 5px rgba(99,102,241,0.5);
+}
+
+    .dark-mode .logo-circle:hover {
+        box-shadow: 0 0 15px rgba(99,102,241,1), 0 0 30px rgba(147,51,234,0.9), 0 0 45px rgba(79,70,229,0.8);
+    }
+
+.dark-mode .card {
+    background-color: #1e293b;
+    color: #e5e7eb;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #020617;
+    color: white;
+    border: 1px solid #475569;
+}
+
+/* TAB NORMAL (dark mode) */
+.dark-mode .nav-link {
+    color: #cbd5f5 !important; /* soft bluish */
+    transition: all 0.2s ease;
+}
+
+    /* HOVER */
+    .dark-mode .nav-link:hover {
+        color: #ffffff !important;
+        background-color: rgba(99,102,241,0.2); /* glow tipis */
+        border-radius: 6px;
+        transform: translateX(2px);
+    }
+    .dark-mode .nav-link.active {
+        color: #ffffff !important;
+        background: linear-gradient(135deg, #4f46e5, #9333ea);
+        border-radius: 6px;
+    }
+
+.dark-mode .footer {
+    background-color: #020617;
+    color: #9ca3af;
+}
+
+/* START SIDE BAR */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: var(--sidebar-width);
+    background: #0f172a;
+    color: #e5e7eb;
+    padding: 20px;
+}
+
+/* BRAND */
+.brand-text {
+    font-weight: 600;
+}
+
+/* NAV */
+.sidebar .nav-link {
+    color: #94a3b8;
+    margin-bottom: 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    font-size: 13px;
+}
+
+    .sidebar .nav-link i {
+        margin-right: 10px;
+        font-size: 18px;
+        color: #94a3b8;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar .nav-link:hover i {
+        color: #6366f1; 
+    }
+
+    .sidebar .nav-link:hover {
+        background: rgba(99,102,241,0.2);
+        color: white;
+    }
+
+    .sidebar .nav-link.active {
+        color: white;
+    }
+
+/* MAIN */
+.main-content {
+    flex-grow: 1;
+    position: relative;
+    padding: 20px;
+    background: #020617;
+}
+/* END SIDE BAR */
+
+/* JSON TOOLS */
+#jsonTool button {
+    margin-right: 8px;
+}
+/* END JSON TOOLS */
+
+/* RIO RISE RULES */
+
+#ruleList .card {
+    transition: all 0.2s ease;
+}
+
+    #ruleList .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+#rulesIntro {
+    line-height: 1.7;
+}
+
+    #rulesIntro h3 {
+        font-weight: 700;
+    }
+
+    #rulesIntro ul li {
+        margin-bottom: 6px;
+    }
+/* END RIO RISE RULES */

@@ -1,0 +1,105 @@
+﻿@section Scripts {
+    <script src="~/js/dateUtils.js"></script>
+    <script src="~/js/RioRiseRules/rioriserules.js"></script>
+}
+
+<div id="rulesContent" style="display:none;">
+@* <div class="card p-3"> *@
+
+    <button class="btn btn-secondary mb-2" onclick="showIntro()">
+        ⬅️ Kembali
+    </button>
+    <h4>📚 RP Rules Dictionary</h4>
+
+    <!-- SEARCH -->
+    <input type="text" id="searchRule" class="form-control mt-2" placeholder="Cari aturan...">
+
+    <!-- FILTER -->
+    <select id="filterRole" class="form-control mt-2">
+        <option value="">Semua Role</option>
+        <option value="Police">Police</option>
+        <option value="Medic">Medic</option>
+    </select>
+
+    <!-- LIST -->
+    <div id="ruleList" class="mt-3"></div>
+
+</div>
+
+<div id="rulesIntro" class="card p-4">
+
+    <h3>📖 Rio Rise Roleplay Guide</h3>
+
+    <p>
+        Dokumen ini mengumpulkan semua pedoman yang harus diikuti pemain untuk memastikan pengalaman roleplay yang adil, terorganisir, dan imersif. 
+        Bacalah setiap topik dengan seksama untuk menghindari hukuman dan memastikan interaksi yang baik di server.
+    </p>
+
+    <hr />
+
+    <h5>📌 Pasal-pasal</h5>
+    <ul>
+        <li>
+            <b><u>
+                Pasal 1</u>  Kebijakan Akun Game</b>:
+            Aturan terkait penggunaan akun, pembuatan banyak akun, berbagi akun, keamanan, dan hukuman terkait pelanggaran.
+        </li>
+
+        <li>
+            <b><u>
+                Pasal 2</u>  Terminologi Hukuman</b>:
+            Penjelasan jenis hukuman yang diterapkan: peringatan, skorsing sementara, larangan, pemblokiran whitelist, dan lain-lain.
+        </li>
+
+        <li>
+            <b><u>
+                Pasal 3</u>  Aturan Umum Proses Roleplay</b>:
+            Pedoman dasar untuk menjaga RP yang konsisten, termasuk perilaku, interpretasi karakter, lingkungan, narasi, dan interaksi dengan pemain lain.
+        </li>
+
+        <li>
+            <b><u>
+                Pasal 4</u>  Aturan – Alkitab RP</b>:
+            Aturan utama yang menentukan apa yang diperbolehkan dan dilarang dalam roleplay. Ini adalah aturan induk, berlaku untuk semua situasi.
+        </li>
+
+        <li>
+            <b><u>
+                Pasal 5</u>  Aturan Pelaporan</b>:
+            Prosedur untuk mengajukan laporan, mengirim bukti, batas waktu, jenis situasi yang diterima, dan perilaku yang dianggap abusif atau tidak valid.
+        </li>
+
+        <li>
+            <b><u>
+                Pasal 6</u>  Zona Aman (Safe Zone)</b>:
+            Tempat di mana tindakan ilegal, konflik, atau interaksi agresif dilarang. Penjelasan tentang fungsi, pengecualian, dan hukuman.
+        </li>
+
+        <li>
+            <b><u>
+                Pasal 7</u>  Aturan Aksi Jalanan</b>:
+            Perilaku dalam konflik perkotaan antar pemain, termasuk pendekatan, tembak-menembak, pengejaran, batasan, dan kewajiban interpretasi.
+        </li>
+
+        <li>
+            <b><u>
+                Pasal 8</u>  Aturan Keluarga</b>:
+            Pedoman untuk pembuatan, pengelolaan, dan organisasi keluarga RP, batas anggota, tanggung jawab, dan perilaku terlarang.
+        </li>
+
+    </ul>
+
+    <hr />
+
+    <h5>📘 Cara Menggunakan Rules</h5>
+    <ul>
+        <li>Gunakan fitur search untuk mencari aturan</li>
+        <li>Filter berdasarkan role</li>
+        <li>Baca deskripsi dengan teliti</li>
+    </ul>
+
+    <button class="btn btn-primary mt-3" onclick="showRules()">
+        📚 Lihat Daftar Rules
+    </button>
+
+</div>

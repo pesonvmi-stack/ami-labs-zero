@@ -1,0 +1,20 @@
+[
+  {
+    "title": "No Random Deathmatch (RDM)",
+    "category": "General",
+    "description": "Tidak boleh menyerang tanpa alasan roleplay yang jelas.",
+    "roles": [ "All" ]
+  },
+  {
+    "title": "Police Duty Rules",
+    "category": "Police",
+    "description": "Polisi harus mengikuti SOP saat penangkapan.",
+    "roles": [ "Police" ]
+  },
+  {
+    "title": "Medic Priority",
+    "category": "Medic",
+    "description": "Medic wajib mendahulukan pasien kritis.",
+    "roles": [ "Medic" ]
+  }
+]
